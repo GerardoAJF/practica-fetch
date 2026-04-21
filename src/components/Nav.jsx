@@ -11,6 +11,9 @@ function Nav() { // Definir el componente Nav para la barra de navegación
                 <Link to="/dragon" className="hover:underline">
                     DragonBall
                 </Link>
+                <Link to="/rick" className="hover:underline">
+                    Rick and Morty
+                </Link>
             </div>
         </nav>
     );
