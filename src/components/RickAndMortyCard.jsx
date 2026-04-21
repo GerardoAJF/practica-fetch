@@ -2,7 +2,7 @@ import React from "react";
 
 const RickAndMortyCard = ({ character }) => {
     return (
-        <article tabIndex={0} className="group mx-auto w-full max-w-sm overflow-hidden rounded-2xl border border-white/40 bg-white/65">
+        <article tabIndex={0} className="shadow-lg group mx-auto w-full max-w-sm overflow-hidden rounded-2xl border border-white/40 bg-white/65">
             <div className="flex h-72 items-center justify-center rounded-b-2xl bg-[radial-gradient(circle_at_20%_20%, rgba(255,248,216,0.95),rgba(237,246,255,0.78)_75%)]">
                 <img src={character.image} alt={character.name} className="h-full w-full rounded-2xl object-contain transition-all duration-300" loading="lazy"
                     onError={(event) => {
@@ -40,7 +40,7 @@ const RickAndMortyCard = ({ character }) => {
                 </div>
             </div>
             <div className="border-t border-gray-200 p-4">
-                <h3 className="text-xl font-semibold leading-tight text-gray-900 text-center">Episodios:</h3>
+                <h3 className="text-xl font-semibold leading-tight text-gray-900 text-center">Episodios</h3>
                 <div className="flex flex-wrap gap-3 mt-4 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 max-h-64">
                     {character.episode.map((episode, index) => (
                         <span key={index} className="bg-slate-100/75 px-3 py-2 text-sm font-semibold text-slate-800">
